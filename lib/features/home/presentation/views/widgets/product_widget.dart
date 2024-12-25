@@ -39,7 +39,7 @@ class ProductWidget extends StatelessWidget {
                   productModel.title!.substring(0, 15),
                   style: TextStyle(
                     fontSize: 14.sp,
-                    fontWeight: FontWeight.bold,
+                    color: AppColors.kTextColor,
                   ),
                   overflow: TextOverflow.ellipsis,
                 ),
@@ -47,7 +47,7 @@ class ProductWidget extends StatelessWidget {
                   productModel.description!,
                   style: TextStyle(
                     fontSize: 14.sp,
-                    fontWeight: FontWeight.bold,
+                    color: AppColors.kTextColor,
                   ),
                   overflow: TextOverflow.ellipsis,
                 ),
@@ -57,7 +57,7 @@ class ProductWidget extends StatelessWidget {
                   ' ${productModel.price}',
                   style: TextStyle(
                     fontSize: 14.sp,
-                    fontWeight: FontWeight.bold,
+                    color: AppColors.kTextColor,
                   ),
                 ),
                 Row(
@@ -69,7 +69,7 @@ class ProductWidget extends StatelessWidget {
                           'Review (${productModel.rating?.count ?? 0})',
                           style: TextStyle(
                             fontSize: 14.sp,
-                            fontWeight: FontWeight.bold,
+                            color: AppColors.kTextColor,
                           ),
                         ),
                         Icon(Icons.star, color: Colors.amber),
